@@ -1,0 +1,46 @@
+:root{
+    --cor-fundo: #background: rgb(202,255,0);
+    background: linear-gradient(90deg, rgba(202,255,0,1) 0%, rgba(52,255,0,0.9472163865546218) 53%, rgba(202,255,0,1) 100%);;
+    --cor-principal: background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(31,255,0,0.9472163865546218) 48%, rgba(241,255,0,1) 100%, rgba(202,255,0,1) 10088%); ;
+    --cor-secundaria: #51ff00e1; 
+    --cor-destaque: #ff6600;
+    --cor-texto: #000000;
+
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
